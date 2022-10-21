@@ -65,7 +65,7 @@ select.addEventListener('change', () => {
 async function getWeather(capital) {
 	try {
 		//получение api
-		const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${capital}&appid=39be4fcbdf5882d26890b1fcbae75d12`)
+		const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${capital}&appid=39be4fcbdf5882d26890b1fcbae75d12`)
 		//преобразование полученных данных в объект
 		const data = await response.json();
 
