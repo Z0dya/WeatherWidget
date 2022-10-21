@@ -19,9 +19,6 @@ body {
     justify-content: center;
 }
 
-/* #e0dfdb */
-/* #c2d3e8 */
-/* #b4cae4 */
 .main {
     display: flex;
     justify-content: center;
@@ -42,15 +39,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 10px solid transparent;
-    background: linear-gradient(#c2d3e8, #FFFFCC, #dfb1d5) padding-box, radial-gradient(#00C9A7, #845EC2);
+    border: 5px solid transparent;
+    background: linear-gradient(#c2d3e8, #c2d3e8, #dfb1d5, #dfb1d5) padding-box, radial-gradient(#00C9A7, #845EC2);
     width: 200px;
     border-radius: 10%;
     padding: 20px;
     text-align: center;
     margin: 10px;
 }
-
 
 .cityName {
     background: linear-gradient(to right, #4776e6, #8e54e9);
@@ -73,12 +69,34 @@ body {
     margin: 0;
 }
 
+.temp__count::after {
+    content: '°'
+}
 
 .weather__icon {
     width: 100%;
     margin: 0;
 }
 
+
+/* стили для разных температур */
+
+.hot {
+    /* background: #FFFFCC; */
+    background: linear-gradient(#c2d3e8, #FFFFCC, #FFFFCC, #dfb1d5) padding-box, radial-gradient(#00C9A7, #845EC2);
+}
+
+.normal {
+    /* background: #ffffffd6; */
+    background: linear-gradient(#c2d3e8, #ffffff, #ffffff, #dfb1d5) padding-box, radial-gradient(#00C9A7, #845EC2);
+}
+
+.cold {
+    /* background: #CCFFFF; */
+    background: linear-gradient(#c2d3e8, #CCFFFF, #CCFFFF, #dfb1d5) padding-box, radial-gradient(#00C9A7, #845EC2);
+}
+
+/* стили тэгов */
 
 hr {
     width: 100%;
@@ -120,6 +138,8 @@ h2 {
     animation: gradient 10s ease-in infinite;
     background-size: 200%;
 }
+
+/* анимация background'a  */
 
 @keyframes gradient {
     0% {

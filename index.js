@@ -70,11 +70,30 @@ async function getWeather(capital) {
 		const data = await response.json();
 
 		//? присваивание HTML тегов к полученным объектам после получения данных
+		let Widget = document.querySelector('.weatherBlock');
 		document.querySelector('.cityName').textContent = data.name;
-		document.querySelector('.temp__count').textContent = Math.round(data.main.temp - 273) + '°';
+		let tempCount = document.querySelector('.temp__count').textContent = Math.round(data.main.temp - 273);
 		document.querySelector('.temp__description').textContent = data.weather[0].description;
 		document.querySelector('.weather__icon').innerHTML = `<img src = ./img/${data.weather[0].icon}@2x.png>`;
 		document.querySelector('.temp__wind').innerHTML = data.wind.speed + ' м/c';
+
+		console.log(tempCount);
+		//?изменение фона виджета в зависимости от температуры
+		if (tempCount > 0 && tempCount <= 20) {
+			Widget.classList.add('normal');
+			Widget.classList.remove('cold', 'hot');
+		}
+		else if (tempCount < 0) {
+			Widget.classList.add('cold');
+			Widget.classList.remove('hot', 'normal');
+		}
+		else if (tempCount > 20) {
+			Widget.classList.add('hot');
+			Widget.classList.remove('cold', 'normal');
+		}
+		else {
+			Widget.classList.remove('hot', 'cold', 'normal');
+		}
 	}
 
 	//если произошла ошибка, то выводим:
