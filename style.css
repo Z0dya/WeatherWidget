@@ -36,7 +36,7 @@ body {
     border: 5px solid transparent;
     background: linear-gradient(#c2d3e8, #c2d3e8, #dfb1d5, #dfb1d5) padding-box, radial-gradient(#00C9A7, #845EC2);
     width: 250px;
-    height: max-content;
+    height: 360px;
     border-radius: 10%;
     padding: 30px;
     text-align: center;
