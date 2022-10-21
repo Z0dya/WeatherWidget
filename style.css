@@ -1,0 +1,136 @@
+html {
+    height: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+    background: #CC95C0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7AA1D2, #DBD4B4, #CC95C0);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    animation: gradient 10s ease-in infinite;
+    background-size: 200%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+/* #e0dfdb */
+/* #c2d3e8 */
+/* #b4cae4 */
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main__title {
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+    padding: 5px 10px;
+    color: white;
+    max-width: 35%;
+}
+
+.weatherBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 10px solid transparent;
+    background: linear-gradient(#c2d3e8, #FFFFCC, #dfb1d5) padding-box, radial-gradient(#00C9A7, #845EC2);
+    width: 200px;
+    border-radius: 10%;
+    padding: 20px;
+    text-align: center;
+    margin: 10px;
+}
+
+
+.cityName {
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    width: 100%;
+}
+
+.temp {
+    width: 100%;
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.temp__count {
+    font-size: 30px;
+    margin: 0;
+}
+
+
+.weather__icon {
+    width: 100%;
+    margin: 0;
+}
+
+
+hr {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+select {
+    margin: 20px;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+    font-size: 14px;
+    color: #222;
+    padding: 5px 0;
+}
+
+option {
+    text-align: center;
+    font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
+    font-size: 14px;
+}
+
+option::after {
+    content: " ";
+    display: block;
+    width: 100%;
+}
+
+h1,
+h2 {
+    font-size: 20px;
+    width: 50%;
+    text-align: center;
+    margin: 10px 0;
+    background: linear-gradient(to right, #4776e6, #8e54e9);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 10s ease-in infinite;
+    background-size: 200%;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}

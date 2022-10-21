@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
+    <title>Weather App</title>
+</head>
+
+<body>
+
+    <div class="main">
+        <h1 class="main__title"> Погода в столицах мира <br /> Здесь вы можете узнать погоду в разных городах по всей планете!</h3>
+            <select id="select">
+                <option value="unset">Выберите страну</option>
+            </select>
+            <div class="weatherBlock ">
+                <h1 class="cityName">Название города</h1>
+                <hr>
+                <div class="temp">
+                    <p class="temp__count">0°</p>
+                    <p class="temp__description">Описание погоды</p>
+                    <p class="temp__wind">Скорость ветра м/с</p>
+                </div>
+                <hr>
+                <p class="weather__icon"><img src="./img/02d@2x.png" alt="Картинка"></p>
+
+            </div>
+    </div>
+    </div>
+
+    <script src="./index.js"></script>
+</body>
+
+</html>
