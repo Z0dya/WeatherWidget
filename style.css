@@ -26,13 +26,7 @@ body {
     flex-direction: column;
 }
 
-.main__title {
-    border-radius: 10px;
-    mix-blend-mode: multiply;
-    padding: 5px 10px;
-    color: white;
-    max-width: 35%;
-}
+
 
 .weatherBlock {
     display: flex;
@@ -41,9 +35,10 @@ body {
     align-items: center;
     border: 5px solid transparent;
     background: linear-gradient(#c2d3e8, #c2d3e8, #dfb1d5, #dfb1d5) padding-box, radial-gradient(#00C9A7, #845EC2);
-    width: 200px;
+    width: 250px;
+    height: max-content;
     border-radius: 10%;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     margin: 10px;
 }
@@ -54,6 +49,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%;
+
 }
 
 .temp {
@@ -62,10 +58,11 @@ body {
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-size: 22px;
 }
 
 .temp__count {
-    font-size: 30px;
+    font-size: 40px;
     margin: 0;
 }
 
@@ -108,7 +105,7 @@ hr {
 select {
     margin: 20px;
     font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     color: #222;
     padding: 5px 0;
 }
@@ -116,7 +113,7 @@ select {
 option {
     text-align: center;
     font-family: 'Open Sans', 'Helvetica Neue', 'Segoe UI', 'Calibri', 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 18px;
 }
 
 option::after {
@@ -127,7 +124,7 @@ option::after {
 
 h1,
 h2 {
-    font-size: 20px;
+    font-size: 24px;
     width: 50%;
     text-align: center;
     margin: 10px 0;
