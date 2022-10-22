@@ -20,7 +20,7 @@ async function getOptions() {
 	//если произошла ошибка, то выводим:
 	catch (error) {
 		console.log(error);
-		alert(error, 'ошибка подключения к API списку стран и городов');
+		alert(error);
 	}
 }
 
@@ -46,10 +46,6 @@ async function addAllOptions() {
 			optionNode.value = option.capital;
 			//добавление в select option'ы с странами и столицами
 			select.appendChild(optionNode)
-
-			// 			температура выше 20 - #FFFFCC
-			// температура от 0 до 20 - #FFFFFF
-			// температура ниже 0 - #CCFFFF
 		}
 
 	}
@@ -99,7 +95,7 @@ async function getWeather(capital) {
 	//если произошла ошибка, то выводим:
 	catch (error) {
 		console.log(error);
-		alert(error, 'ошибка подключения к API погоды');
+		alert(error);
 	}
 
 }

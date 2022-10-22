@@ -67,7 +67,7 @@ body {
 }
 
 .temp__count::after {
-    content: '°'
+    content: '°C'
 }
 
 .weather__icon {
