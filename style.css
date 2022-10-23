@@ -24,9 +24,14 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+
 }
 
+.area {
+    display: flex;
+    justify-content: center;
 
+}
 
 .weatherBlock {
     display: flex;
@@ -41,6 +46,7 @@ body {
     padding: 30px;
     text-align: center;
     margin: 10px;
+    position: absolute;
 }
 
 .cityName {
@@ -49,7 +55,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     width: 100%;
-
+    cursor: default;
 }
 
 .temp {
@@ -64,10 +70,19 @@ body {
 .temp__count {
     font-size: 40px;
     margin: 0;
+    cursor: default;
 }
 
 .temp__count::after {
     content: '°C'
+}
+
+.temp__description {
+    cursor: default;
+}
+
+.temp__wind {
+    cursor: default;
 }
 
 .weather__icon {
