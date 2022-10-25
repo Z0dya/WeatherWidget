@@ -63,7 +63,7 @@ async function getOptions() {
 		//получение api
 		const response = await fetch('https://restcountries.com/v2/all?fields=name,capital');
 		//преобразовываем полученные данные в объект
-		const data = await response.json();
+		const data = response.json();
 		//? отправляем в addAllOptions
 		return data;
 	} catch (error) {
@@ -109,7 +109,7 @@ select.addEventListener('change', () => {
 	getWeather(select.value);
 });
 
-//? вызов функции каждые 10 секунд
+//? вызов функции каждую 1 минуту
 setInterval(() => {
 	//если город не null, не false, не пустая строка
 	if (globalCapital) {
@@ -141,7 +141,7 @@ async function getWeather(capital) {
 			setTimeout(() => {
 				controller.abort();
 			}, 5000);
-
+			
 			const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${capital}&appid=fb876a71a8844bf7dbd7aa9a8080a2e9`, {
 				signal: controller.signal, //передаем сигнал (сигнал: значение сигнала)
 			});
